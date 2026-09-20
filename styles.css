@@ -1,0 +1,395 @@
+/* =========================================
+   AL FARUQH CROCHET
+   Feuille de style principale
+   ========================================= */
+
+/* ---------- RÉINITIALISATION ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #24352a;
+}
+
+/* ---------- CONTENEUR ---------- */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5eee7;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2f6b45;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #24352a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2f6b45;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+    background: linear-gradient(135deg, #f1f8f3, #ffffff);
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #245638;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: #526158;
+    margin-bottom: 30px;
+}
+
+/* ---------- BOUTONS ---------- */
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #2f6b45;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #245638;
+    transform: translateY(-2px);
+}
+
+/* ---------- SECTIONS ---------- */
+
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #245638;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+    color: #657169;
+}
+
+/* ---------- PRODUITS ---------- */
+
+.products {
+    background-color: #ffffff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e2ebe5;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(36, 86, 56, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(36, 86, 56, 0.14);
+}
+
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    background-color: #f4f7f4;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-info h3 {
+    font-size: 1.3rem;
+    color: #245638;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: #667168;
+    margin-bottom: 12px;
+}
+
+.price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2f6b45;
+    margin-bottom: 18px;
+}
+
+/* ---------- À PROPOS ---------- */
+
+.about {
+    background-color: #f5f9f6;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content p {
+    color: #59665d;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+/* ---------- TÉMOIGNAGES ---------- */
+
+.testimonials-section {
+    background-color: #f1f8f3;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(36, 86, 56, 0.05);
+    border: 1px solid #e2ebe5;
+}
+
+.testimonial-content p:first-child {
+    font-style: italic;
+    color: #526158;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #2f6b45;
+}
+
+/* ---------- CONTACT ---------- */
+
+.contact {
+    background-color: #ffffff;
+}
+
+.contact-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-content p {
+    color: #5f6b63;
+    margin-bottom: 25px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-links a {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid #cbdccf;
+    border-radius: 8px;
+    color: #2f6b45;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: #2f6b45;
+    color: #ffffff;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #245638;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* ---------- RESPONSIVE TABLETTE ---------- */
+
+@media (max-width: 900px) {
+
+    .products-grid, .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* ---------- RESPONSIVE TÉLÉPHONE ---------- */
+
+@media (max-width: 600px) {
+
+    .header-content {
+        min-height: auto;
+        padding: 18px 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .products-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .product-card img {
+        height: 300px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-links a {
+        text-align: center;
+    }
+}
+
+/* ---------- PETITS TÉLÉPHONES ---------- */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
